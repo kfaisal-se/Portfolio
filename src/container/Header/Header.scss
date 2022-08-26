@@ -1,0 +1,169 @@
+#home {
+  position: relative;
+  background: url('../../assets/bgIMG.png');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+
+  .app__wrapper {
+    padding: 0;
+
+    .cpyright {
+      display: none;
+    }
+  }
+
+}
+
+.app__header {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+
+  padding: 6rem 2rem 0;
+
+  @media screen and (min-width: 2000px){
+    padding-top: 8rem;
+  }
+
+  @media screen and (max-width: 1200px){
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px){
+    padding-top: 6rem 1rem 2rem;
+  }
+}
+
+.app__header-info {
+  flex:0.65;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+
+  @media screen and(max-width: 2000px) {
+    width: 100%;
+    marfin-right: 0rem;
+  }
+}
+
+.app__header-img {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 650px;
+  margin-bottom: 300px;
+
+  @media screen and(max-width: 1600px) {
+    margin-left: 400px;
+    margin-top: 1em;
+  }
+
+
+  img {
+    width: 500%;
+    object-fit: contain;
+    z-index: 1;
+    height: 50%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    margin-left: -300px;
+
+    @media screen and(max-width: 1200px) {
+      margin: 2rem 0;
+      justify-content: center;
+      margin-bottom: 10rem;
+    }
+  }
+
+  @media screen and(max-width: 1200px) {
+    margin: 2rem 0;
+    justify-content: center;
+  }
+}
+
+
+.app__greeting {
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+
+  @media screen and(max-width: 1200px) {
+    margin: 0;
+  }
+
+  @media screen and(max-width: 450px) {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+  }
+}
+
+.heading-text {
+  color: rgb(108, 109, 119);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 4px;
+
+  @media screen and(max-width: 1200px) {
+    margin-left: 0px;
+  }
+}
+
+.name-text {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 5rem;
+  // margin-right: 3px;
+
+  @media screen and(max-width: 1200px) {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+
+    motion: auto;
+  }
+}
+
+.type__text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  font-weight: 1000;
+  color: rgb(108, 109, 119);
+  margin-left: 3px;
+
+  @media screen and(max-width: 1200px) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+  }
+}
+
+.download__button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+
+  font-weight: 500;
+  color: var(--white-color);
+  outline: none;
+  margin: 2rem 0 0 0;
+  font-family: var(--font-base);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #323470;
+  }
+}
