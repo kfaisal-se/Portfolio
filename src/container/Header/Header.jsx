@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 
-import { adidas } from "../../constants/images"
+import resume from "../../constants/images";
 
 import { AppWrap } from '../../wrapper';
 import "./Header.scss";
@@ -11,9 +11,6 @@ import { urlFor, client} from '../../client';
 
 const Header = () => {
   const [profile,setProfile] = useState([]);
-  const [resume,setResume] = useState();
-
-  const resumee = "";
 
   useEffect(() => {
     const profilQquery = '*[_type == "profile"]';
@@ -62,13 +59,19 @@ const Header = () => {
             />
           </div>
 
-          <a href={"https://cdn.sanity.io/files/d1k2qulk/production/c9c4531f575b9425e04ec7e16e5ab112a1b59526.pdf"} download>
-            <button type="button" className="download__button">Download Resume</button>
+          <a href={resume} download="Kamran_Faisal-resume.pdf">
+          {profile.map((p) => (
+            <motion.h1 
+            className="name-text"
+            whileInView={{ x: [30, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            >
+              <button type="button" className="download__button">Download Resume</button>
+            </motion.h1>
+          ))}
           </a>
         </div>
       </div>
-
-      
 
       <motion.div
         className="app__header-img"
