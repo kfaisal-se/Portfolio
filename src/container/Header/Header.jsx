@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 
-import resume from "../../constants/images";
+// import resume from "../../constants/images";
+// import adidas from "../../constants/images";
 
 import { AppWrap } from '../../wrapper';
 import "./Header.scss";
@@ -59,17 +60,9 @@ const Header = () => {
             />
           </div>
 
-          <a href={resume} download="Kamran_Faisal-resume.pdf">
-          {profile.map((p) => (
-            <motion.h1 
-            className="name-text"
-            whileInView={{ x: [30, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            >
-              <button type="button" className="download__button">Download Resume</button>
-            </motion.h1>
-          ))}
-          </a>
+          {/* <a href="../../../assets/Awesome_CV__3_.pdf" download>
+            <button type="button" className="download__button">Download Resume</button>
+          </a> */}
         </div>
       </div>
 
