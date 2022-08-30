@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 
-// import resume from "../../constants/images";
-// import adidas from "../../constants/images";
-
 import { AppWrap } from '../../wrapper';
 import "./Header.scss";
 
