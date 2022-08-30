@@ -3,9 +3,10 @@ import './Nav.scss';
 
 import { motion } from "framer-motion";
 
-import { AiOutlineHome, AiOutlineUser, AiOutlineProject } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineProject } from 'react-icons/ai';
 import { IoIosApps } from 'react-icons/io';
 import { BiMessageSquareDetail } from 'react-icons/bi';
+import { HiMenu } from "react-icons/hi";
 
 import ReactTooltip from 'react-tooltip';
 
@@ -29,15 +30,27 @@ const Nav = () => {
         </ReactTooltip>
       </a>
 
-      <a className={active === "#about" && "active"} onClick={() => setActive("#about")} href='#about'data-tip data-for="#about">
-        <AiOutlineUser />
+      <a className={active === "#skills" && "active"} onClick={() => setActive("#skills")} href='#skills'data-tip data-for="#skills">
+        <IoIosApps />
         <ReactTooltip
-          id="#about"
+          id="#skills"
           effect="solid"
           arrowColor="#fff"
           className="nav-tooltip"
         >
-          About
+          Skills
+        </ReactTooltip>
+      </a>
+
+      <a className={active === "#experience" && "active"} onClick={() => setActive("#experience")} href='#experience'data-tip data-for="#experience">
+        <HiMenu />
+        <ReactTooltip
+          id="#experience"
+          effect="solid"
+          arrowColor="#fff"
+          className="nav-tooltip"
+        >
+          Experience
         </ReactTooltip>
       </a>
 
@@ -50,18 +63,6 @@ const Nav = () => {
           className="nav-tooltip"
         >
           Projects
-        </ReactTooltip>
-      </a>
-
-      <a className={active === "#skills" && "active"} onClick={() => setActive("#skills")} href='#skills'data-tip data-for="#skills">
-        <IoIosApps />
-        <ReactTooltip
-          id="#skills"
-          effect="solid"
-          arrowColor="#fff"
-          className="nav-tooltip"
-        >
-          Skills
         </ReactTooltip>
       </a>
 

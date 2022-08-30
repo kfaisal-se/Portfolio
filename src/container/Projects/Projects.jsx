@@ -84,4 +84,4 @@ const Projects = () => {
 }
 
 // export default Projects;
-export default AppWrap(MotionWrap(Projects, 'app__works'), 'projects', 'app__primarybg');
+export default AppWrap(MotionWrap(Projects, 'app__works'), 'projects', 'app__whitebg');
