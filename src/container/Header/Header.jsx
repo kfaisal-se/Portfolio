@@ -60,9 +60,9 @@ const Header = () => {
             />
           </div>
 
-          {/* <a href="../../../assets/Awesome_CV__3_.pdf" download>
-            <button type="button" className="download__button">Download Resume</button>
-          </a> */}
+          <a href='#contact'>
+            <button type="button" className="download__button">Hire Me</button>
+          </a>
         </div>
       </div>
 
