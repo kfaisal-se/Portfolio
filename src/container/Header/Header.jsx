@@ -33,15 +33,15 @@ const Header = () => {
           >
             Hello! I Am
           </motion.h2>
-          {profile.map((p) => (
-            <motion.h1 
-            className="name-text"
-            whileInView={{ x: [30, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-            >
-              {p.name}
-            </motion.h1>
-          ))}
+          
+          <motion.h1 
+          className="name-text"
+          whileInView={{ x: [30, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          >
+            Kamran Faisal
+          </motion.h1>
+          
           <div 
             className="type__text"
           >
