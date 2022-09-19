@@ -58,7 +58,7 @@ const Header = () => {
           </div>
 
           <a href='#contact'>
-            <button type="button" className="hire__botton">Hire Me</button>
+            <button type="button" className="hire__botton">Get in Touch</button>
           </a>
         </div>
       </div>
